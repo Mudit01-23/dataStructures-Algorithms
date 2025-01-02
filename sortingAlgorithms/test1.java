@@ -1,39 +1,38 @@
 import java.util.Arrays;
+
 public class test1 {
     public static void main(String[] args) {
-        int[] array = {4,3,5,2,1,0};
+        int[] array = {5,4,3,2,1,0};
         System.out.println(Arrays.toString(array));
-        selectionSort(array);
+        selectionSortUsingFunctions(array);
         System.out.println(Arrays.toString(array));
     }
 
+    static void selectionSortUsingFunctions(int[] array){
+        for (int i = 0; i <= array.length-1; i++) {
+            int firstElementIndex = 0;
+            int lastElementIndex = array.length-1-i;
+            int maxElement= maxElement(array,firstElementIndex,lastElementIndex);
+            swap(array,maxElement,lastElementIndex);
+
+        }
+    }
     
-    static void selectionSort(int[] array){
-        boolean swap = true;
-
-        for (int i = 0; i < array.length; i++) {
-            int maxElementIndex = 0;
-            swap = false;
-
-            for (int j = 0; j < array.length-i; j++) {
-
-                if(array[j] >array[maxElementIndex]){
-                    maxElementIndex = j;
-                }
+    static int maxElement(int[] array,int firstElementIndex,int lastElementIndex){
+        int maxElement = firstElementIndex;
+        for (int i = maxElement; i <= lastElementIndex; i++) {
+            if(array[maxElement]<array[i]){
+                maxElement= i;
             }
-
-
-        int temp = array[maxElementIndex];
-        array[maxElementIndex] = array[array.length-1-i];
-        array[array.length-1-i] = temp;
-        swap = true;
-
-
-        if(!swap){
-            break;
         }
+        return maxElement;
 
-        }
-        
+    };
+    
+    static void swap(int[] array,int first,int second){
+
+        int temp = array[first];
+        array[first] = array[second];
+        array[second] = temp;
     }
 }
