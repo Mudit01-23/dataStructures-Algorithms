@@ -1,7 +1,7 @@
 package insertionSort;
 
 import java.util.Arrays;
-
+                // this program will work for duplicate items in the array as well.
 public class insertionSortUsingFunction{  
     public static void main(String[] args) {
         //int[] array = {5, 4, 3, 2, 1};
