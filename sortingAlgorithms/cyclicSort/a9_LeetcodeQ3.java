@@ -1,6 +1,6 @@
 package cyclicSort;
 
-public class leetCodeQ3 {
+public class a9_LeetcodeQ3 {
     public static void main(String[] args) {
         int[] nums = {1,3,4,2,2};
         int duplicateElement = findDuplicateElement(nums);
