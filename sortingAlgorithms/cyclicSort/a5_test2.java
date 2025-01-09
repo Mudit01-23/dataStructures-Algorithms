@@ -2,7 +2,7 @@ package cyclicSort;
 
 import java.util.Arrays;
 
-public class test2 {
+public class a5_test2 {
    public static void main(String[] args) {
     // writing cyclicSort Code without help and combining both when array starts from 1 or 0;    
      //int[] nums = {3,2,1,5,4,0};

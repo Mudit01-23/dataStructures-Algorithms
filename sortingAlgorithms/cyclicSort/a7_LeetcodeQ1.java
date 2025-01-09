@@ -2,13 +2,14 @@ package cyclicSort;
 
 import java.util.Arrays;                
 // Leetcode 268- Missing number.   
-// This program finds the missing number in the array.
+// This program finds the 1 missing number in the array.
 // https://leetcode.com/problems/missing-number/description/
 
-public class A1CyclicSortQuestion {
+public class a7_LeetcodeQ1 {
     public static void main(String[] args) {
         //int[] array = {0,3,2,1,4};
-        int[] array = {3,0,1};
+        //int[] array = {3,0,1};
+        int[] array = {0,1,4,2};
         int missingNumber = missingNumber(array);
         System.out.println(missingNumber);
     }
@@ -26,6 +27,7 @@ public class A1CyclicSortQuestion {
 
     
    }
+
    // to find the missing element
    for (int j = 0; j < nums.length; j++) {
     if(nums[j]!= j){

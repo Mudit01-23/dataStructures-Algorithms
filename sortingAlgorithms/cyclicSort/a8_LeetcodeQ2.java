@@ -1,7 +1,8 @@
 package cyclicSort;
 import java.util.Arrays;
 import java.util.ArrayList;
-public class LeetCodeQ2 {
+
+public class a8_LeetcodeQ2{
     public static void main(String[] args) {
         int[] nums = {4,4,3,3,2,2,7,7,8,8,2,2,3,3,1,1};
         System.out.println(Arrays.toString(nums));
@@ -9,6 +10,7 @@ public class LeetCodeQ2 {
         ArrayList<Integer> list = findMissingNumber(nums);
         System.out.println(list);
     }
+    
     static ArrayList<Integer> findMissingNumber(int[] nums){
         int i = 0;
         while(i<nums.length){
