@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 // asking for user's input in multi-dimensional array.
 
@@ -8,13 +7,13 @@ public class A3_2DArrays {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                System.out.print( "["+i+"]"+"["+j+"]"+" element: ");
+                //  System.out.print( "["+i+"]"+"["+j+"]"+" element: ");
                 array[i][j] = sc.nextInt();
             }
         }
 
 
-        // 3 ways of printing- 
+        // 5 ways of printing- 
 
         //System.out.println(Arrays.deepToString(array));
         
@@ -22,12 +21,27 @@ public class A3_2DArrays {
         //     System.out.println(Arrays.toString(array[i]));
         // }
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.println(array[i][j]+ "");
-            }
+        // for (int i = 0; i < array.length; i++) {
+        //     for (int j = 0; j < array[i].length; j++) {
+        //         System.out.print(array[i][j]+ " ");
+        //     }
 
-            System.out.println("");
+        //     System.out.println("");
+        // }
+
+
+        // for(int[] i:array){
+        //         System.out.println(Arrays.toString(i));
+        //     }
+
+
+        for(int[] i:array){
+            for(int j : i){
+                System.out.print(j + " ");
+            }
+            System.out.println(" ");
+        }
+            
         }
     }
-}
+
