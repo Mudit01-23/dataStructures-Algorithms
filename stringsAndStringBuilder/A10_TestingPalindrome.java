@@ -1,7 +1,7 @@
 public class A10_TestingPalindrome {
     public static void main(String[] args) {
         
-        String str = "null";
+        String str = null;
         boolean result = isPalindrome(str);
         if(result == false){
             System.out.println(str+ " is not palindrome");
@@ -12,7 +12,7 @@ public class A10_TestingPalindrome {
     }
 
     static boolean isPalindrome(String str){
-        if (str == "null" || str.length()== 0) {
+        if (str == null || str.length()== 0) {
             return true;
         }
         str = str.toLowerCase();
