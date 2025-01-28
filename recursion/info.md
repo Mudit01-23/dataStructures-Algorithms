@@ -12,7 +12,7 @@ we have 4 cases-
 the time complexity of using linear search either with our without recursion, will be 
 O(n), but the space complexity of using linear search with recursion is O(n),(because every element involves a new recursive call in the worst case whereas the space complexity of using linear search without recursion is constant - O(1).
 
-Similarly for binary search as well, so- 
+Similarly for binary search as well, so we have - 
 | Algorithm       | Time Complexity (Without Recursion) | Time Complexity (With Recursion) | Space Complexity (Without Recursion) | Space Complexity (With Recursion) |
 |------------------|-------------------------------------|-----------------------------------|---------------------------------------|------------------------------------|
 | **Linear Search** | O(n)                               | O(n)                              | O(1)                                  | O(n)                              |
