@@ -1,28 +1,38 @@
-import java.util.Scanner;
-public class test {
-    public static void main(String[] args) {
-        int[] array = {5,10,15,20,25,30};
-        Scanner sc =new Scanner(System.in);
-        int target = sc.nextInt();
-        int answer = binarySearch(array,target);
-        System.out.println(answer);
-    }
+import java.util.Arrays;
 
-    static int binarySearch(int[] array, int target){
-        int start = 0;
-        int end = array.length-1;
-        while(start<=end){
-            int mid= start + (end-start)/2;
-            if(target>array[mid]){
-                start = mid+1;            
-            }
-            else if(target<array[mid]){
-                end = mid-1;
-            }
-            else{
-               return mid;
+public class test{
+    public static void main(String[] args) {
+        int[][] array = {{1,1,0,0},{1,0,0,1},{0,1,1,1},{1,0,1,0}};
+        System.out.println(Arrays.deepToString(array));
+        int[][] reverseRows = reverseRows(array);
+        int[][] invertImage = invertImage(reverseRows);
+        System.out.println(Arrays.deepToString(invertImage));
+    }
+    static int[][] reverseRows(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            int start = 0;
+            int end = array[i].length - 1;
+
+            while (start < end) {
+                // Swap elements in the row
+                int temp = array[i][start];
+                array[i][start] = array[i][end];
+                array[i][end] = temp;
+
+                start++;
+                end--;
             }
         }
-        return -1;
+        return array;
     }
+
+    static int[][] invertImage(int[][] array){
+        for(int i = 0;i<array.length;i++){
+            for(int j =0;j<array[i].length;j++){
+                array[i][j] = 1-array[i][j];
+            }
+        }
+        return array;
+    }
+   
 }

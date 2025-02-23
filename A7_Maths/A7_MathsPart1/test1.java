@@ -1,32 +1,19 @@
-
-import java.util.Scanner;
+import java.util.Arrays;
 
 
 public class test1 {
 
     // odd or even
     public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the number");
-    int n = sc.nextInt();
-    
-    System.out.print("The binary representation of "+ n+ "is:" );
-    binaryRepresentation(n);
-    int counter = 0;
-    while(n>0){
-        counter+=1;
-        n = 1&(n>>1);
-    }
-    System.out.println("and the number of digits in binary format are "+ counter );
-    
-    
+    int[] array= {1,2,3,4,5,6,7};
+    System.out.println(Arrays.toString(array));
+    int[] reverseArray = reverseArray(array);
+
 
     }
-    static void binaryRepresentation(int n){
-        if(n>0){
-            binaryRepresentation(n/2);
-            System.out.print(n%2);
-        }
+    static int reverseArray(int[] array){
+       
+        return array;
     }
     
 }
