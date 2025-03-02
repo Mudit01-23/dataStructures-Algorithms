@@ -1,7 +1,9 @@
-package polymorphism;
+package polymorphism.types;
+// this is method overloading and it is compile time or static polymorphism
 
-public class Testing {
-    public static void main(String[] args) {
+
+public class CompileTime {
+    public static void mainey(String[] args) {
         sum(1,2);
         sum(1,2,3);
         sum(1,2,3,4);

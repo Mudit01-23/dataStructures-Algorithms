@@ -1,2 +1,7 @@
-package polymorphism;public class Square {
+package polymorphism;
+
+public class Square extends Shapes{
+    void area(){
+        System.out.println("The area is side* side");
+    }
 }
