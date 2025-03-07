@@ -1,5 +1,5 @@
 package inheritance;
-// here we are creating a box which will inherit the parameter of box and has
+// here we are creating A box which will inherit the parameter of box and has
 // its own parameter weight
 public class BoxWeight extends Box {
     // here BoxWeight class is inheriting the box's properties

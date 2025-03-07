@@ -1,7 +1,7 @@
 package singleton;
 // use of singleton class is that if we want to have only 1 object of a particular
 // thing then use singleton class
-public class Main {
+public class main {
     public static void main(String[] args) {
         Singleton obj = Singleton.getInstance();
         Singleton obj1 = Singleton.getInstance();

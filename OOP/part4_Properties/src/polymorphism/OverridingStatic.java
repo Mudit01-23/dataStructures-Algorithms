@@ -1,7 +1,7 @@
 package polymorphism;
 class parent{
 //    parent(){
-//        System.out.println("This is a parent class");
+//        System.out.println("This is A parent class");
 //    }
 static void greeting(){
         System.out.println("Greeting from parent class");

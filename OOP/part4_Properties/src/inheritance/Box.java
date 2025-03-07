@@ -26,7 +26,7 @@ public class Box {
     }
 
     Box(Box old){
-    this.l = old.l;         // this is a copy constructor
+    this.l = old.l;         // this is A copy constructor
     this.b = old.b;
     this.h = old.h;
     }
