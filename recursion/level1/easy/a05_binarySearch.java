@@ -1,7 +1,7 @@
 // package easy;
 import java.util.Arrays;
 // binary search without recursion
-public class a5_binarySearch {
+public class a05_binarySearch {
     public static void main(String[] args) {
         int[] array = {5,7,10,11,15};
 

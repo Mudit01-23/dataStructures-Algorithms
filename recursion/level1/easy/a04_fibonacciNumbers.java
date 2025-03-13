@@ -1,6 +1,6 @@
 package easy;
 
-public class a4_fibonacciNumbers {
+public class a04_fibonacciNumbers {
 
     // program to print nth fibonacci numbers
 

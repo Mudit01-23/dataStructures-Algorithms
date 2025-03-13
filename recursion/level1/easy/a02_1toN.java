@@ -43,7 +43,7 @@
 
 
 
-public class a2_1toN{
+public class a02_1toN{
     public static void main(String[] args) {
         int n = 17;
         func(n);

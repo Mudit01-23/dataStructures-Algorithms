@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class a6_binarySearchUsingRecursion {
+public class a06_binarySearchUsingRecursion {
      public static void main(String[] args) {
         int[] array = {5,7,10,11,15};
 

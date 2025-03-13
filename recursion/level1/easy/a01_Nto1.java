@@ -1,6 +1,6 @@
 
 
-public class a1_Nto1 {
+public class a01_Nto1 {
     public static void main(String[] args) {
         int num = 5;
         func(num);

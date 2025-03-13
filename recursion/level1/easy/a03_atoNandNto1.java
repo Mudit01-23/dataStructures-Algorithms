@@ -1,4 +1,4 @@
-public class a3_atoNandNto1 {
+public class a03_atoNandNto1 {
     public static void main(String[] args) {
         int n =5;
         func(n);
