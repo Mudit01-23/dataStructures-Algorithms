@@ -14,6 +14,7 @@ public class quickSort {
         int end = high;
         int mid = start+ (end-start)/2;
         int pivot = array[mid];
+
         while(start<=end){
 
             while(array[start]<pivot){
@@ -32,9 +33,10 @@ public class quickSort {
                 end--;
             }
 
-            quickSort(array, low, end);
-            quickSort(array, start, high); 
+            
         }
+        quickSort(array, low, end);
+        quickSort(array, start, high); 
     
     }
 }
